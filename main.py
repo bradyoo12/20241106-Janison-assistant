@@ -11,13 +11,13 @@ st.set_page_config(
     page_icon=":brain:",  # Favicon emoji
     layout="centered",  # Page layout option
 )
-PROJECT_ID = "intro-grounding-gemini"  # @param {type:"string"}
+PROJECT_ID = "janison"  # @param {type:"string"}
 REGION = "us-central1"  # @param {type: "string"}
 
 DATA_STORE_PROJECT_ID = PROJECT_ID  # @param {type:"string"}
 DATA_STORE_REGION = "global"  # @param {type:"string"}
 # Replace this with your data store ID from Vertex AI Search
-DATA_STORE_ID = "janison_1730729340653"  # @param {type:"string"}
+DATA_STORE_ID = "janison-com_1730988913673"  # @param {type:"string"}
 
 
 # Set up Google Gemini-Pro AI model
@@ -52,7 +52,7 @@ if "chat_session" not in st.session_state:
 
 # Display the chatbot's title on the page
 st.title("🤖 Janison chatbot")
-st.caption("A Chatbot to answer about Janison")
+st.caption("Start by asking 'what was the challenge that Transport for NSW was faciing?' and compare the answer with the 'The challenge' on https://www.janison.com/customer-stories/transport-for-nsw")
 
 from vertexai.preview.generative_models import grounding as preview_grounding
 
