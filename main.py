@@ -52,7 +52,7 @@ if "chat_session" not in st.session_state:
 
 # Display the chatbot's title on the page
 st.title("🤖 Janison chatbot")
-st.caption("Start by asking 'what was the challenge that Transport for NSW was faciing?' and compare the answer with the 'The challenge' on https://www.janison.com/customer-stories/transport-for-nsw")
+st.caption("Start by asking 'what was the challenge that Transport for NSW was facing?' and compare the answer with the 'The challenge' on https://www.janison.com/customer-stories/transport-for-nsw")
 
 from vertexai.preview.generative_models import grounding as preview_grounding
 
