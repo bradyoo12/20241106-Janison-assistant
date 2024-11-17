@@ -11,13 +11,13 @@ st.set_page_config(
     page_icon=":brain:",  # Favicon emoji
     layout="centered",  # Page layout option
 )
-PROJECT_ID = "janison"  # @param {type:"string"}
+PROJECT_ID = "bradtalk"#"janison"  # @param {type:"string"}
 REGION = "us-central1"  # @param {type: "string"}
 
 DATA_STORE_PROJECT_ID = PROJECT_ID  # @param {type:"string"}
 DATA_STORE_REGION = "global"  # @param {type:"string"}
 # Replace this with your data store ID from Vertex AI Search
-DATA_STORE_ID = "janison-com_1730988913673"  # @param {type:"string"}
+DATA_STORE_ID = "brad_1731122878593"#"janison-com_1730988913673"  # @param {type:"string"}
 
 
 # Set up Google Gemini-Pro AI model
@@ -25,7 +25,7 @@ vertexai.init(project=PROJECT_ID, location="us-central1")
 
 tool = Tool.from_retrieval(
     preview_grounding.Retrieval(
-        preview_grounding.VertexAISearch(
+        preview_grounding.VertexAISearch(  # loading 빠르다
             datastore=DATA_STORE_ID,
             project=DATA_STORE_PROJECT_ID,
             location=DATA_STORE_REGION,
